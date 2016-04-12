@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="plugin" group="payment">
+	<name>os_braintree</name>
+	<title>Braintree</title>	
+	<author>Tuan Pham Ngoc</author>
+    <creationDate>10-08-2015</creationDate>
+	<copyright>Copyright 2010-2015 Ossolution Team</copyright>
+	<license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL version 2</license>
+	<authorEmail>tuanpn@joomdonation.com</authorEmail>
+	<authorUrl>www.joomdonation.com</authorUrl>
+	<version>1.0</version>
+	<description>Braintree Payment Plugin For Events Booking Extension</description>	
+	<config>	
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="braintree_mode" type="list" label="Payment Mode" description="Set to Test Mode Or Live Mode">
+					<option value="0">Test Mode</option>
+					<option value="1">Live Mode</option>
+				</field>
+				<field name="merchant_id" type="text" size="40" label="Merchant ID" description="Enter Your Braintree Merchant ID" default=""></field>	
+				<field name="public_key" type="text" label="Public Key" description="Enter Your Braintree Public Key"></field>
+				<field name="private_key" type="text" label="Private Key" description="Enter Your Braintree Private Key"></field>
+                <field name="payment_fee_amount" type="text" label="Payment Processing Fee ($)" description=""></field>
+                <field name="payment_fee_percent" type="text" label="Payment Processing Fee (%)" description=""></field>
+			</fieldset>			
+		</fields>
+	</config>
+	<files>
+		<filename>os_braintree.php</filename>
+		<folder>lib</folder>		
+	</files>	
+	<installsql />
+	<installfile />	
+</install>
